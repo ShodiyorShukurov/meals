@@ -1,0 +1,38 @@
+.site-header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 20px;
+    color: #000;
+
+    &::before {
+      position: absolute;
+      top: -5px;
+      bottom: 0;
+      left: -35px;
+      content: "";
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    &.active {
+      content: "🥘";
+    }
+  }
+}
