@@ -1,6 +1,6 @@
 import "./header.scss";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/meals.jpg";
+import logo from "../../assets/logo-becdd635.png";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container">
         <div className="site-header__wrapper">
           <Link to="/home">
-            <img src={logo} alt="Meals img logo" width="80" />
+            <img src={logo} alt="Meals img logo" width="90" />
           </Link>
 
           <nav className="nav">

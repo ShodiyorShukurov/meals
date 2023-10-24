@@ -14,7 +14,7 @@ const MealsItem = ({ idMeal, strMealThumb, strMeal }) => {
             height="300"
           />
           <div className="card-body">
-            <h3 className="card-title">{strMeal}</h3>
+            <h5 className="card-text text-center">{strMeal}</h5>
           </div>
           <div className="card-footer text-center">
             <Link to={`/meal/${idMeal}`}>More info</Link>

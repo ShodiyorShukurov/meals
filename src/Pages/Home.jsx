@@ -15,7 +15,7 @@ const HomePage = () => {
       })
     );
   }, []);
-  console.log(state.mealsCount);
+
   return (
     <div className="container">
       <div className="my-3">

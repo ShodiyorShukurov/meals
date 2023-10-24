@@ -4,21 +4,24 @@ import PropTypes from "prop-types";
 const CategoryItem = ({ strCategory, strCategoryThumb }) => {
 
   return (
-    <li className="col-3 mb-4">
-      <div className="card">
+    <li className="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+      <div className="card text-center shadow-lg">
         <img
-          className="card-img-top"
+          className="card-img-top mx-auto"
           src={strCategoryThumb}
           alt={strCategory}
           width={300}
-          height={400}
+          height={300}
         />
         <div className="card-body">
-          <h3 className="card-title">{strCategory}</h3>
+          <h3 className="card-title text-center">{strCategory}</h3>
         </div>
-        <div className="card-footer text-center">
-          <Link to={`/meals/${strCategory.toLowerCase()}`} className="btn btn-primary rounded-0">
-            Watch category
+        <div className="card-footer text-center ">
+          <Link
+            to={`/meals/${strCategory.toLowerCase()}`}
+            className="btn btn-outline-primary rounded-0 w-100"
+          >
+            Watch {strCategory.toLowerCase()}
           </Link>
         </div>
       </div>

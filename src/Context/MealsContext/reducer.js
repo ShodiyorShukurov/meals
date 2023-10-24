@@ -24,5 +24,13 @@ export const reducer = (state, action) => {
       ...state,
       mealsCategoriezedCount: state.mealsCategoriezedCount + 8,
     };
+  } else if (action.type === "SEARCH_MEALS") {
+    const filtredMeals = state.meals.filter((meal) =>
+      meal.strCategory.match(action.payload)
+    );
+    return {
+      ...state,
+      meals: filtredMeals
+    };
   }
 };
