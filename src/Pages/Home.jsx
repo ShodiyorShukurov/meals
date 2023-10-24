@@ -4,6 +4,7 @@ import CategoryList from "../components/CategoryList";
 import MealsFiltred from "../components/MealsFilter";
 import { getAllMealsByCategories } from "../Service/getData";
 
+
 const HomePage = () => {
   const { state, dispatch } = React.useContext(MealsContext);
 

@@ -5,6 +5,7 @@ import MealsList from "../components/MealsList";
 import MealInfo from "../components/MealsInfo";
 import NotFound from "../Pages/NotFound";
 import Footer from "../components/Footer";
+import { InfinitySpin } from "react-loader-spinner";
 
 const Root = () => {
   return (

@@ -1,10 +1,12 @@
 import CategoryItem from "../CategoryItem";
 import PropTypes from "prop-types";
 
+
 const CategoryList = ({ meals, dispatch }) => {
   return (
     <>
       <ul className="row">
+       
         {meals.length > 0 &&
           meals.map((meal) => <CategoryItem key={meal.idCategory} {...meal} />)}
       </ul>

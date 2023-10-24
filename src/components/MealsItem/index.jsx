@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 const MealsItem = ({ idMeal, strMealThumb, strMeal }) => {
   return (
     <>
-      <li className="col-3 mb-3">
-        <div className="card h-100">
+      <li className="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <div className="card text-center shadow-lg h-100">
           <img
-            className="card-img-top"
+            className="card-img-top mx-auto"
             src={strMealThumb}
             alt={strMeal}
             width="300"

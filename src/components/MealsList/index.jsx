@@ -18,7 +18,7 @@ const MealsList = () => {
   }, []);
 
   return (
-    <div className="container d-flex flex-column justify-content-center">
+    <div className="container">
       <ul className="row mt-3">
         {state.mealsCategoriezed
           .slice(0, state.mealsCategoriezedCount)
@@ -26,17 +26,19 @@ const MealsList = () => {
             <MealsItem key={meal.idMeal} {...meal} />
           ))}
       </ul>
-      <button
-        className="btn btn-outline-primary my-5 mx-auto"
-        type="button"
-        onClick={() =>
-          dispatch({
-            type: "MEALS_CATEGORIEZED_COUNT",
-          })
-        }
-      >
-        See more
-      </button>
+      <div className="d-flex justify-content-center">
+        <button
+          className="btn btn-outline-primary my-5 mx-auto"
+          type="button"
+          onClick={() =>
+            dispatch({
+              type: "MEALS_CATEGORIEZED_COUNT",
+            })
+          }
+        >
+          See more
+        </button>
+      </div>
     </div>
   );
 };

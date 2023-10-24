@@ -11,7 +11,7 @@ const MealInfo = () => {
   React.useEffect(() => {
     getMealsById(id).then((res) => setMeal(res.data.meals));
   }, []);
-  console.log(meal);
+
 
   return (
     <div className="container mt-5">
