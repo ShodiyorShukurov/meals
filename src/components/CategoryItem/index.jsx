@@ -12,6 +12,7 @@ const CategoryItem = ({ strCategory, strCategoryThumb }) => {
           alt={strCategory}
           width={300}
           height={300}
+          style={{maxWidth: "300px", maxHeight: "300px"}}
         />
         <div className="card-body">
           <h3 className="card-title text-center">{strCategory}</h3>
