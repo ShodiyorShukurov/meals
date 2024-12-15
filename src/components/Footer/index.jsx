@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="container">
         <div className="d-flex justify-content-center">
           <span >
-            Copyright &copy; {new Date().getFullYear()}
-            <a className="text-white" href="https://t.me/ShukurovShB" target="blanck"> Shukurov Shodiyor</a>
+            Copyright &copy; {new Date().getFullYear()} Elbek
+           {/* <a className="text-white" href="https://t.me/ShukurovShB" target="blanck"> Shukurov Shodiyor</a>*/}
           </span>
         </div>
       </div>

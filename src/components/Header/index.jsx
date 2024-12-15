@@ -22,7 +22,7 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="site-header__item">
+             {/* <li className="site-header__item">
                 <NavLink className="site-header__link" to="/about">
                   About
                 </NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
                 <NavLink className="site-header__link" to="/contacts">
                   Contacts
                 </NavLink>
-              </li>
+              </li>*/}
             </ul>
 
             <div className="site-header__mobile">
